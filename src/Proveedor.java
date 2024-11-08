@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.time.LocalDate;
+
 public class Proveedor extends Persona
 {
     private CuentaCorriente CtaCte;

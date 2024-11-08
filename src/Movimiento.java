@@ -1,3 +1,5 @@
+import java.time.LocalDate;
+
 public class Movimiento
 {
     private int Codigo;

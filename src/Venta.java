@@ -1,4 +1,7 @@
-public class Venta {
+import java.util.ArrayList;
+
+public class Venta
+{
     private int Codigo;
     private Cliente Cliente;
     private int Cantidad;
@@ -6,7 +9,8 @@ public class Venta {
     private double Total;
     private FormaPago FormaPago;
 
-    public Venta(int codigo, Cliente cliente, int cantidad, Producto[] productos, double total, FormaPago formaPago) {
+    public Venta(int codigo, Cliente cliente, int cantidad, Producto[] productos, double total, FormaPago formaPago)
+    {
         this.Codigo = codigo;
         this.Cliente = cliente;
         this.Cantidad = cantidad;
