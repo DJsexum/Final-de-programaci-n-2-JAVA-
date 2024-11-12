@@ -1,3 +1,5 @@
+package Enumerados;
+
 public enum Sexo
 {
     MASCULINO("Masculino"),

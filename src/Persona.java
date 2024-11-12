@@ -1,6 +1,14 @@
 import java.time.LocalDate;
 
-public class Persona
+// No podemos generar personas asi por que si, por eso es una clase abstracta
+// Podrias hacer dos contstructores, 1 para el empleado, el cual deberia tener todas las cosas de la clase Persona
+// Otro para cliente, de la clase Persona, en donde solo se pida, por ejemplo nombre, apellido y dni o algo asi (ya que para un cliente no es necesario las demas cosas)
+// Despues hacer los getters y setters
+// Mejora las cosas haciendo paquetes para las cosas
+// Podriamos hacer un constructor o funcion para que solo sean printf de los datos de lo que se pida, por ejemplo empleado seria todos los datos
+// Intentar no usar tantos Try Cach para que no sea tanto el uso de memoria, en cambio, usar un if else
+
+public abstract class Persona
 {
     private int Dni;
     private boolean Activo;
@@ -43,102 +51,62 @@ public class Persona
 
     // Metodos Getters y Setters
     public int ObtenerDni()
-    {
-        return Dni;
-    }
+    {return Dni;}
 
     public void EstablecerDni(int dni)
-    {
-        this.Dni = dni;
-    }
+    {this.Dni = dni;}
 
     public boolean ObtenerActivo()
-    {
-        return Activo;
-    }
+    {return Activo;}
 
     public void EstablecerActivo(boolean activo)
-    {
-        this.Activo = activo;
-    }
+    {this.Activo = activo;}
 
     public String ObtenerNombres()
-    {
-        return Nombres;
-    }
+    {return Nombres;}
 
     public void EstablecerNombres(String nombres)
-    {
-        this.Nombres = nombres;
-    }
+    {this.Nombres = nombres;}
 
     public String ObtenerApellidos()
-    {
-        return Apellidos;
-    }
+    {return Apellidos;}
 
     public void EstablecerApellidos(String apellidos)
-    {
-        this.Apellidos = apellidos;
-    }
+    {this.Apellidos = apellidos;}
 
     public String ObtenerTelefono()
-    {
-        return Telefono;
-    }
+    {return Telefono;}
 
     public void EstablecerTelefono(String telefono)
-    {
-        this.Telefono = telefono;
-    }
+    {this.Telefono = telefono;}
 
     public String ObtenerDireccion()
-    {
-        return Direccion;
-    }
+    {return Direccion;}
 
     public void EstablecerDireccion(String direccion)
-    {
-        this.Direccion = direccion;
-    }
+    {this.Direccion = direccion;}
 
     public String ObtenerLocalidad()
-    {
-        return Localidad;
-    }
+    {return Localidad;}
 
     public void EstablecerLocalidad(String localidad)
-    {
-        this.Localidad = localidad;
-    }
+    {this.Localidad = localidad;}
 
     public Provincia ObtenerProvincia()
-    {
-        return Provincia;
-    }
+    {return Provincia;}
 
     public void EstablecerProvincia(Provincia provincia)
-    {
-        this.Provincia = provincia;
-    }
+    {this.Provincia = provincia;}
 
     public Sexo ObtenerSexo()
-    {
-        return Sexo;
-    }
+    {return Sexo;}
 
     public void EstablecerSexo(Sexo sexo)
-    {
-        this.Sexo = sexo;
-    }
+    {this.Sexo = sexo;}
 
     public LocalDate ObtenerFechaNacimiento()
-    {
-        return FechaNacimiento;
-    }
+    {return FechaNacimiento;}
 
     public void EstablecerFechaNacimiento(LocalDate fechaNacimiento)
-    {
-        this.FechaNacimiento = fechaNacimiento;
-    }
+    {this.FechaNacimiento = fechaNacimiento;}
 }

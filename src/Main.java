@@ -1,6 +1,7 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.time.LocalDate;
+import Enumerados.Sexo;
 
 public class Main
 {
@@ -8,6 +9,7 @@ public class Main
     {
         Scanner scanner = new Scanner(System.in);
         int opcion;
+        Sexo genero = Sexo.OTRO; // Inicializar genero con Sexo.OTRO
 
         do
         {
@@ -16,12 +18,10 @@ public class Main
             System.out.println("2) Femenino");
             System.out.println("3) Otro");
             System.out.print("Elija su genero: ");
-
             opcion = scanner.nextInt();
         }
         while (opcion < 1 || opcion > 3);
 
-        Sexo genero;
         switch (opcion)
         {
             case 1:
@@ -30,7 +30,7 @@ public class Main
 
             case 2:
                 genero = Sexo.FEMENINO;
-                    break;
+                break;
 
             case 3:
                 genero = Sexo.OTRO;

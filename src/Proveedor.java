@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.time.LocalDate;
 
+// Dijo Guille que podria ser que si queremos sacar una clase, podria ser Proveedor, pero solo esta clase
+
 public class Proveedor extends Persona
 {
     private CuentaCorriente CtaCte;

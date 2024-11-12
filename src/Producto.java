@@ -1,3 +1,5 @@
+import Enumerados.Categoria;
+
 import java.util.ArrayList;
 
 public class Producto
@@ -8,7 +10,7 @@ public class Producto
     private double Precio;
     private String Marca;
     private String Material;
-    private Categoria Categoria;
+    private Enumerados.Categoria Categoria;
     private int Stock;
 
     public Producto(int codigo, String detalle, String talle, double precio, String marca, String material, Categoria categoria, int stock)

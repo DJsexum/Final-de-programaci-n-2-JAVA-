@@ -1,3 +1,5 @@
+import Enumerados.FormaPago;
+
 import java.util.ArrayList;
 
 public class Venta
@@ -7,7 +9,7 @@ public class Venta
     private int Cantidad;
     private Producto[] Productos;
     private double Total;
-    private FormaPago FormaPago;
+    private Enumerados.FormaPago FormaPago;
 
     public Venta(int codigo, Cliente cliente, int cantidad, Producto[] productos, double total, FormaPago formaPago)
     {
