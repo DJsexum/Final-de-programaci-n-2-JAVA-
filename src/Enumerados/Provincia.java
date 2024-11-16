@@ -34,7 +34,6 @@ public enum Provincia
         return this.name();
     }
 
-
     public String obtenerProvinciaPorCodigo(int codigo)
     {
         for (Provincia provincia : Provincia.values())
@@ -58,8 +57,6 @@ public enum Provincia
         }
         return null; // O lanzar una excepcion si el nombre no existe
     }
-
-
 }
 
 // Fijate que chota tengo que hacer aca para que me quede bien, por que no se si esta bien esto que hice, es para buscar por nombre o por numero 
